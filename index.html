@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatabile" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Login">Login</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <br>
+        <hr>
+    </div class="header-text">
+    <h1><pre>           ONLINE EDUCATION<pre></h1><br>
+        <h2><pre>                                                                              Explore and improve your skills for your bright future</pre></h2>
+        <img src="images/online new.png" class="logo">
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="about-col-2">
+            <h1 class="sub-title">About</h1>
+            <p><i><b>Welcome to our Online Education Platform!.</b><br> We are dedicated to provide high-quality online education that empowers learners to achieve their goals and unlock their full potential. At our Online Education Platform, our mission is to make education accessible to everyone, regardless of geographical limitations or time constraints. We believe that learning should be flexible, interactive, and engaging, enabling individuals to enhance their knowledge and skills at their own space. What sets us apart is our commitment to deliver a comprehensive and dynamic learning experience. Our platform offers a wide range of courses spanning various subjects and industries. Whether you're looking to acquire new skills for professional growth, explore a personal interest, or advance your career, we have the perfect course for you. Our courses are meticulously designed by industry experts and experienced educators, ensuring that the content is up-to-date, relevant, and aligned with industry standards. We leverage innovative teaching methods and interactive multimedia resources to create an immersive learning environment that stimulates curiosity and encourages active participation. You'll have the opportunity to learn from accomplished instructors who bring real-world experience and expertise to the virtual classroom. They are passionate about helping learners succeed and are dedicated to providing personalized guidance and support throughout your learning journey. We understand that learning is not a one-size-fits-all process. That's why our platform allows you to customize your learning path based on your interests, goals, and preferred learning style. You'll have access to a wealth of supplementary resources, including discussion forums, online communities, and additional study materials, to enrich your learning experience. Join our thriving community of learners who have achieved remarkable success through our online education platform. Hear their stories and discover how our courses have transformed their careers and opened new doors of opportunity. Take the first step towards your educational journey today! Sign up for a free trial and explore our course catalog to embark on a learning experience that will empower you to reach new heights of knowledge and expertise.</i></p>
+            <div id="courses">
+                <div class="container" >
+                    <hl class="sub-title">COURSES</hl>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/c.png">
+                            <div class="layer">
+                                <h3>C PROGRAMMING LANGUAGE</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/python.png">
+                            <div class="layer">
+                                <h3>PYTHON PROGRAMMING LANGUAGE</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/java.png">
+                            <div class="layer">
+                                <h3>JAVA PROGRAMMING LANGUAGE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>onlineeducation@email.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required> 
+                    <textarea type="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ onlineeducation. made with <i class="fas fa-heart"></i>  by easy tutorials</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+</script>
+
+</body>
+</html>
